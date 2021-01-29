@@ -3,7 +3,7 @@ const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
-const Render = Matter.Render;
+//const Render = Matter.Render;
 const Constraint = Matter.Constraint;
 var bobObject1,bobObject2,bobObject3, bobObject4,bobObject5, roofObject
 var rope1,rope2,rope3, rope4,rope5;
@@ -34,7 +34,7 @@ function setup() {
 	//Create a Ground
 	
 
-	var render = Render.create({
+	/*var render = Render.create({
 	  element: document.body,
 	  engine: engine,
 	  options: {
@@ -42,7 +42,7 @@ function setup() {
 	    height: 700,
 	    wireframes: false
 	  }
-	});
+	});*/
 
 
 	rope1=new rope(bobObject1.body,roofObject.body,-bobDiameter*2, 0)
